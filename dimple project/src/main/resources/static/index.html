@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cafe Guide | Luxury Ocean Cafe</title>
+<meta name="description" content="Cafe Guide - Where Every Sip Feels Like the Ocean Breeze. A luxurious blue beach inspired cafe.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%8A%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============================= LOADING SCREEN ============================= -->
+<div id="loading-screen">
+  <div class="loader-wave"></div>
+  <div class="loader-text">Cafe Guide</div>
+  <div class="loader-sub">Brewing your experience...</div>
+</div>
+
+<div id="toast-container"></div>
+
+<!-- ============================= NAVBAR ============================= -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo"><i class="fa-solid fa-water"></i> Cafe Guide</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#menu" class="nav-link">Menu</a></li>
+      <li><a href="#games" class="nav-link">Games & Rewards</a></li>
+      <li><a href="#gallery" class="nav-link">Gallery</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#reservation" class="nav-link">Reservation</a></li>
+      <li><a href="#offers" class="nav-link">Offers</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <li id="profileNavItem" hidden><a href="#profile" class="nav-link">My Profile</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn" id="darkToggle" title="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="icon-btn" id="cartBtn" title="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="cart-count" id="cartCount">0</span></button>
+      <button class="icon-btn" id="loginBtn" title="Login"><i class="fa-solid fa-user"></i></button>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================= HERO ============================= -->
+<header id="home">
+  <div class="bubbles" id="heroBubbles"></div>
+  <div class="container hero-content">
+    <div class="hero-tag reveal visible"><i class="fa-solid fa-mug-hot"></i> Premium Ocean-Front Cafe</div>
+    <h1 class="reveal visible">Cafe <em>Guide</em></h1>
+    <p class="reveal visible">"Where Every Sip Feels Like the Ocean Breeze."</p>
+    <div class="hero-btns reveal visible">
+      <a href="#games" class="btn btn-gold"><i class="fa-solid fa-gamepad"></i> Play & Win</a>
+      <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-utensils"></i> Explore Menu</a>
+      <a href="#reservation" class="btn btn-outline"><i class="fa-regular fa-calendar-check"></i> Book a Table</a>
+    </div>
+    <div class="hero-stats reveal visible">
+      <div class="hero-stat"><h3 class="counter" data-target="12">0</h3><span>Years Serving</span></div>
+      <div class="hero-stat"><h3 class="counter" data-target="48000">0</h3><span>Happy Guests</span></div>
+      <div class="hero-stat"><h3 class="counter" data-target="120">0</h3><span>Signature Dishes</span></div>
+      <div class="hero-stat"><h3 class="counter" data-target="4.9" data-decimal="1">0</h3><span>Average Rating</span></div>
+    </div>
+  </div>
+  <div class="hero-waves">
+    <svg viewBox="0 0 1440 150" preserveAspectRatio="none"><path fill="#f6ecd9" d="M0,64L60,80C120,96,240,128,360,122.7C480,117,600,75,720,64C840,53,960,75,1080,90.7C1200,107,1320,117,1380,122.7L1440,128L1440,150L0,150Z"></path></svg>
+  </div>
+  <div class="hero-scroll"><span>Scroll</span><i class="fa-solid fa-chevron-down"></i></div>
+</header>
+
+<!-- ============================= ABOUT ============================= -->
+<section id="about" class="section section-alt">
+  <div class="container about-grid">
+    <div class="about-images reveal">
+      <div class="about-img about-img-1"><img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=800&q=80" alt="Cafe interior"></div>
+      <div class="about-img about-img-2"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=700&q=80" alt="Latte art"></div>
+      <div class="about-badge decor-float"><span>12+</span><small>Years of Craft</small></div>
+    </div>
+    <div class="about-text reveal">
+      <div class="section-tag">About Cafe Guide</div>
+      <h2 class="section-title">A Coastal Escape <span>Brewed to Perfection</span></h2>
+      <p class="section-desc">Nestled where the tide meets tranquility, Cafe Guide blends the art of premium coffee with the serenity of the ocean. Every corner of our space is designed to transport you — soft blues, warm sand tones, and gentle wave sounds create an ambience unlike any other.</p>
+      <div class="about-features">
+        <div class="about-feature"><i class="fa-solid fa-house-chimney"></i> Beautiful Interior</div>
+        <div class="about-feature"><i class="fa-solid fa-mug-saucer"></i> Fresh Coffee Daily</div>
+        <div class="about-feature"><i class="fa-solid fa-plate-wheat"></i> Delicious Food</div>
+        <div class="about-feature"><i class="fa-solid fa-umbrella-beach"></i> Beach Ambience</div>
+        <div class="about-feature"><i class="fa-solid fa-people-arrows"></i> Friendly Staff</div>
+        <div class="about-feature"><i class="fa-solid fa-couch"></i> Comfortable Seating</div>
+      </div>
+      <a href="#games" class="btn btn-gold"><i class="fa-solid fa-gamepad"></i> Play & Win</a>
+      <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Discover Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= WHY CHOOSE US ============================= -->
+<section id="why-us" class="section">
+  <div class="container">
+    <div class="section-tag center" style="display:flex;justify-content:center;">Why Choose Us</div>
+    <h2 class="section-title center">Crafted For Your <span>Perfect Experience</span></h2>
+    <p class="section-desc center">We go beyond the ordinary cafe experience — every detail is thoughtfully designed for comfort, quality and luxury.</p>
+    <div class="wcu-grid">
+      <div class="wcu-card reveal"><div class="wcu-icon"><i class="fa-solid fa-leaf"></i></div><h3>Fresh Ingredients</h3><p>Locally sourced, hand-picked ingredients delivered fresh every single morning.</p></div>
+      <div class="wcu-card reveal reveal-delay-1"><div class="wcu-icon"><i class="fa-solid fa-mug-hot"></i></div><h3>Premium Coffee</h3><p>Single-origin beans roasted in-house for a rich, unforgettable flavour.</p></div>
+      <div class="wcu-card reveal reveal-delay-2"><div class="wcu-icon"><i class="fa-solid fa-umbrella-beach"></i></div><h3>Beach Ambience</h3><p>An oceanfront atmosphere that turns every visit into a mini getaway.</p></div>
+      <div class="wcu-card reveal"><div class="wcu-icon"><i class="fa-regular fa-calendar-check"></i></div><h3>Online Reservation</h3><p>Book your favourite table in seconds with our seamless reservation system.</p></div>
+      <div class="wcu-card reveal reveal-delay-1"><div class="wcu-icon"><i class="fa-solid fa-bolt"></i></div><h3>Fast Service</h3><p>Attentive, well-trained staff ensuring quick and delightful service.</p></div>
+      <div class="wcu-card reveal reveal-delay-2"><div class="wcu-icon"><i class="fa-solid fa-tags"></i></div><h3>Affordable Prices</h3><p>Luxury experience with prices that keep you coming back for more.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= MENU ============================= -->
+<section id="menu" class="section section-alt">
+  <div class="container">
+    <div class="section-tag center" style="display:flex;justify-content:center;">Our Menu</div>
+    <h2 class="section-title center">Taste The <span>Ocean Breeze</span></h2>
+    <p class="section-desc center">From rich espresso to fresh seaside bites — explore our curated menu crafted with love.</p>
+
+    <div class="menu-toolbar">
+      <div class="search-box"><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="menuSearch" placeholder="Search for coffee, pizza, desserts..."></div>
+      <div class="menu-filters" id="menuFilters"></div>
+    </div>
+
+    <div class="menu-grid" id="menuGrid"></div>
+  </div>
+</section>
+
+<!-- ============================= RESERVATION ============================= -->
+<section id="reservation" class="section">
+  <div class="container">
+    <div class="section-tag center" style="display:flex;justify-content:center;">Reservation</div>
+    <h2 class="section-title center">Book Your <span>Ocean-View Table</span></h2>
+    <p class="section-desc center">Reserve your spot for an unforgettable coastal dining experience.</p>
+
+    <div class="reserve-wrap reveal">
+      <div class="reserve-info">
+        <h3>Why Reserve With Us?</h3>
+        <p>Secure the best seats in the house — whether it's a sunset date, a family gathering, or a quiet coffee alone by the waves.</p>
+        <ul class="reserve-perks">
+          <li><i class="fa-solid fa-check-circle"></i> Instant confirmation</li>
+          <li><i class="fa-solid fa-check-circle"></i> Indoor & outdoor seaside seating</li>
+          <li><i class="fa-solid fa-check-circle"></i> Complimentary welcome drink</li>
+          <li><i class="fa-solid fa-check-circle"></i> Free cancellation up to 2 hours prior</li>
+        </ul>
+      </div>
+      <div class="reserve-form-wrap">
+        <form id="reservationForm">
+          <div class="form-grid">
+            <div class="form-group"><label>Full Name</label><input type="text" required placeholder="John Doe" id="resName"></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" required placeholder="+91 98765 43210" id="resPhone"></div>
+            <div class="form-group full"><label>Email Address</label><input type="email" required placeholder="you@example.com" id="resEmail"></div>
+            <div class="form-group"><label>Date</label><input type="date" required id="resDate"></div>
+            <div class="form-group"><label>Time</label><input type="time" required id="resTime"></div>
+            <div class="form-group"><label>Number of Guests</label>
+              <select id="resGuests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Guest</option><option value="2">2 Guests</option><option value="3">3 Guests</option><option value="4">4 Guests</option><option value="5">5 Guests</option><option value="6">6 Guests</option><option value="8">8 Guests</option><option value="10">10 Guests</option><option value="12">12 Guests</option><option value="15">15 Guests</option><option value="20">20 Guests</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Seating Preference</label>
+              <div class="seating-toggle">
+                <label><input type="radio" name="seating" value="Indoor" checked><span><i class="fa-solid fa-house"></i> Indoor</span></label>
+                <label><input type="radio" name="seating" value="Outdoor"><span><i class="fa-solid fa-umbrella-beach"></i> Outdoor</span></label>
+              </div>
+            </div>
+            <div class="form-group full"><label>Special Request</label><textarea rows="3" placeholder="Anniversary, birthday, allergies, etc." id="resNote"></textarea></div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block"><i class="fa-regular fa-calendar-check"></i> Reserve Table</button>
+        </form>
+        <div class="reserve-success" id="reserveSuccess">
+          <i class="fa-solid fa-circle-check"></i>
+          <h3>Your table has been booked successfully.</h3>
+          <p style="color:var(--text-muted);">Your reservation is recorded. No confirmation email was sent.</p>
+          <div class="reservation-number" id="reservationNumber">CG-000000</div>
+          <br><br>
+          <button class="btn btn-outline" style="border-color:var(--ocean-blue);color:var(--ocean-blue);" onclick="resetReservationForm()">Make Another Reservation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Games & Rewards -->
+<section id="games" class="section section-alt"><div class="container">
+  <div class="section-tag center" style="display:flex;justify-content:center;">Cafe Games & Rewards</div>
+  <h2 class="section-title center">Play a Little. <span>Win a Treat!</span></h2>
+  <p class="section-desc center">Play a quick cafe game, sign in, and claim a demo coupon when you qualify. Game scores and reward issuance are tracked separately.</p>
+  <div class="wed-banner" id="wednesdayBanner"><div><strong id="wedTitle">Wednesday Specials</strong><p id="wedTerms">Loading today’s offer…</p></div><span id="wedDate"></span></div>
+  <div class="games-grid">
+    <article class="game-card"><span class="game-icon">✕ ○</span><h3>Tic-Tac-Toe</h3><p>Choose Casual for an approachable round or Expert to challenge the minimax cafe bot. A win against the computer can unlock a reward.</p><label class="game-control">Cafe bot <select id="ticDifficulty"><option value="casual">Casual</option><option value="expert">Expert</option></select></label><button class="btn btn-primary btn-sm" data-game="tic">Play Tic-Tac-Toe</button><div id="ticGame" class="game-panel" hidden></div></article>
+    <article class="game-card"><span class="game-icon">🫧</span><h3>Colour Bubbles</h3><p>Pop as many bubbles as you can in 30 seconds. Score 30 points to qualify.</p><button class="btn btn-primary btn-sm" data-game="bubble">Play Bubbles</button><div id="bubbleGame" class="game-panel" hidden></div></article>
+    <article class="game-card"><span class="game-icon">☕</span><h3>Cafe Memory Match</h3><p>Match all six cafe treats. Finish the round to qualify for the daily reward.</p><button class="btn btn-primary btn-sm" data-game="memory">Play Memory Match</button><div id="memoryGame" class="game-panel" hidden></div></article>
+  </div>
+  <div class="reward-box"><h3>Your Rewards</h3><p id="rewardStatus">Sign in to see coupons and daily eligibility.</p><div id="rewardList"></div></div>
+</div></section>
+<!-- ============================= CUSTOMER PROFILE ============================= -->
+<section id="profile" class="section section-alt" hidden>
+  <div class="container">
+    <div class="section-tag">Customer profile</div>
+    <h2 class="section-title">Welcome, <span id="profileNameHeading">Cafe Guide guest</span></h2>
+    <p class="section-desc">Manage your Cafe Guide account and see reservations made with your email address.</p>
+    <div class="profile-grid">
+      <article class="profile-card profile-account-card">
+        <div class="profile-avatar"><i class="fa-solid fa-user"></i></div>
+        <div><h3 id="profileName">Customer</h3><p id="profileEmail">Email address</p></div>
+        <div class="profile-actions"><a class="btn btn-primary btn-sm" href="#reservation">Book a table</a><button type="button" class="btn btn-outline btn-sm" id="profileLogout">Sign out</button></div>
+      </article>
+      <article class="profile-card">
+        <div class="profile-reservations-heading"><div><div class="section-tag">Your visits</div><h3>My Reservations</h3></div><a href="#reservation" class="profile-book-link">Make a reservation</a></div>
+        <div id="profileReservations" class="profile-reservation-list"><p>Sign in to view reservations made with your email.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- ============================= REVIEWS ============================= -->
+<section id="reviews" class="section section-alt">
+  <div class="container">
+    <div class="reviews-top">
+      <div>
+        <div class="section-tag">Customer Reviews</div>
+        <h2 class="section-title">What Our <span>Guests Say</span></h2>
+      </div>
+      <div class="avg-rating-box">
+        <div class="avg-rating-num" id="avgRatingNum">4.8</div>
+        <div>
+          <div class="avg-stars" id="avgStars">★★★★★</div>
+          <div style="color:var(--text-muted);font-size:0.85rem;" id="avgCount">Based on 312 reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reviews-grid" id="reviewsGrid"></div>
+
+    <div class="review-form-box reveal">
+      <h3 style="margin-bottom:6px;">Share Your Experience</h3>
+      <p style="color:var(--text-muted);font-size:0.9rem;margin-bottom:22px;">We'd love to hear how your visit to Cafe Guide was.</p>
+      <form id="reviewForm">
+        <div class="form-grid">
+          <div class="form-group"><label>Your Name</label><input type="text" required id="revName" placeholder="Your name"></div>
+          <div class="form-group"><label>Rating</label>
+            <div class="star-input" id="starInput">
+              <i class="fa-solid fa-star" data-val="1"></i><i class="fa-solid fa-star" data-val="2"></i>
+              <i class="fa-solid fa-star" data-val="3"></i><i class="fa-solid fa-star" data-val="4"></i>
+              <i class="fa-solid fa-star" data-val="5"></i>
+            </div>
+          </div>
+          <div class="form-group full"><label>Your Review</label><textarea rows="4" required id="revText" placeholder="Tell us about your experience..."></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Submit Review</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= GALLERY ============================= -->
+<section id="gallery" class="section">
+  <div class="container">
+    <div class="section-tag center" style="display:flex;justify-content:center;">Gallery</div>
+    <h2 class="section-title center">Moments By The <span>Shore</span></h2>
+    <p class="section-desc center">A glimpse into the beauty, flavours, and ambience of Cafe Guide.</p>
+
+    <div class="gallery-filters" id="galleryFilters"></div>
+    <div class="gallery-grid" id="galleryGrid"></div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></div>
+  <div class="lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></div>
+  <img src="" alt="Gallery preview" id="lightboxImg">
+  <div class="lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></div>
+</div>
+
+<!-- ============================= OFFERS ============================= -->
+<section id="offers" class="section section-alt">
+  <div class="container">
+    <div class="section-tag center" style="display:flex;justify-content:center;">Special Offers</div>
+    <h2 class="section-title center">Deals As Sweet As <span>Our Desserts</span></h2>
+    <p class="section-desc center">Grab these limited-time offers before the tide comes in.</p>
+
+    <div class="offers-grid" id="offersGrid"></div>
+  </div>
+</section>
+
+<!-- ============================= CONTACT ============================= -->
+<section id="contact" class="section">
+  <div class="container contact-grid">
+    <div class="reveal">
+      <div class="section-tag">Contact Us</div>
+      <h2 class="section-title">Let's Stay <span>Connected</span></h2>
+      <p class="section-desc">Have a question, feedback, or want to plan an event? Reach out — we'd love to hear from you.</p>
+      <div class="contact-info-list">
+        <div class="contact-info-item"><div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div><div><h4>Address</h4><p>45 Shoreline Avenue, Ocean Bay, Coastal City, 400001</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fa-solid fa-phone"></i></div><div><h4>Phone</h4><p>+91 98765 43210</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fa-solid fa-envelope"></i></div><div><h4>Email</h4><p>hello@cafeguide.com</p></div></div>
+        <div class="contact-info-item"><div class="ci-icon"><i class="fa-solid fa-clock"></i></div><div><h4>Working Hours</h4><p>Mon - Sun: 7:00 AM - 11:00 PM</p></div></div>
+      </div>
+      <div class="social-row">
+        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" title="Twitter / X"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="map-box"><iframe src="https://maps.google.com/maps?q=beach%20cafe&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" title="Cafe Guide location map"></iframe></div>
+    </div>
+    <div class="contact-form-box reveal">
+      <h3 style="margin-bottom:24px;">Send Us a Message</h3>
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="form-group"><label>Full Name</label><input type="text" required placeholder="Your name"></div>
+          <div class="form-group"><label>Email</label><input type="email" required placeholder="you@example.com"></div>
+          <div class="form-group full"><label>Subject</label><input type="text" required placeholder="How can we help?"></div>
+          <div class="form-group full"><label>Message</label><textarea rows="5" required placeholder="Write your message..."></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= LOGIN / SIGNUP MODAL ============================= -->
+<div class="modal-overlay" id="loginModal">
+  <div class="auth-modal">
+    <div class="modal-close" id="modalClose"><i class="fa-solid fa-xmark"></i></div>
+    <div class="auth-modal-header">
+      <i class="fa-solid fa-water" style="font-size:2.4rem;color:var(--gold);margin-bottom:10px;"></i>
+      <h2 id="authTitle">Welcome Back</h2>
+      <p id="authSubtitle">Login to Cafe Guide to continue</p>
+    </div>
+    <div class="auth-modal-body">
+      <form id="loginForm">
+        <div class="form-group" id="nameGroup" style="display:none;"><label>Your Name</label><input type="text" maxlength="80" placeholder="Full name"></div>
+        <div class="form-group"><label>Email Address</label><input type="email" required placeholder="you@example.com"></div>
+        <div class="form-group" id="passwordGroup"><label>Password</label><input type="password" required minlength="7" maxlength="100" placeholder="At least 7 characters"></div>
+        <div class="form-group" id="confirmGroup" style="display:none;"><label>Confirm Password</label><input type="password" minlength="7" maxlength="100" placeholder="At least 7 characters"></div>
+        <div class="auth-form-row" id="loginExtras">
+          <label class="remember-me"><input type="checkbox"> Remember Me</label>
+          <a href="#" class="forgot-link">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" id="authSubmitBtn"><i class="fa-solid fa-right-to-bracket"></i> Login</button>
+      </form>
+      <div class="divider">or continue with</div>
+      <button class="google-btn"><i class="fa-brands fa-google" style="color:#EA4335;"></i> Continue with Google</button>
+      <p class="auth-switch" id="authSwitch">Don't have an account? <a href="#" id="switchToSignup">Sign Up</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= CART DRAWER ============================= -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-drawer" id="cartDrawer">
+  <div class="cart-header">
+    <h3><i class="fa-solid fa-bag-shopping"></i> Your Cart</h3>
+    <div class="cart-close" id="cartClose"><i class="fa-solid fa-xmark"></i></div>
+  </div>
+  <div class="cart-items" id="cartItemsContainer"></div>
+  <div class="cart-summary" id="cartSummary" style="display:none;">
+    <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+    <div class="summary-row"><span>GST (5%)</span><span id="cartGst">₹0</span></div>
+    <div class="summary-row total"><span>Grand Total</span><span id="cartGrandTotal">₹0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn" style="margin-top:16px;"><i class="fa-solid fa-lock"></i> Checkout</button>
+  </div>
+</div>
+
+<!-- Order confirmation popup -->
+<div class="modal-overlay" id="orderConfirmModal">
+  <div class="auth-modal" style="text-align:center;">
+    <div class="modal-close" id="orderConfirmClose"><i class="fa-solid fa-xmark"></i></div>
+    <div class="auth-modal-body" style="margin-top:0;padding:56px 40px;">
+      <i class="fa-solid fa-circle-check" style="font-size:4.5rem;color:#2e7d32;margin-bottom:20px;"></i>
+      <h2 style="margin-bottom:10px;">Order Confirmed!</h2>
+      <p style="color:var(--text-muted);margin-bottom:20px;">Thank you for ordering with Cafe Guide. Your order id is:</p>
+      <div class="reservation-number" id="orderIdDisplay">CGO-000000</div>
+      <br><br>
+      <button class="btn btn-primary btn-block" id="orderConfirmDone">Done</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============================= FOOTER ============================= -->
+<footer>
+  <div class="container footer-top">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><i class="fa-solid fa-water"></i> Cafe Guide</a>
+        <p>A luxurious ocean-inspired cafe serving premium coffee, fresh food, and unforgettable coastal vibes since 2013.</p>
+        <div class="footer-social">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#reservation">Reservation</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#menu">Coffee & Tea</a></li>
+          <li><a href="#menu">Cold Beverages</a></li>
+          <li><a href="#menu">Pizza & Pasta</a></li>
+          <li><a href="#menu">Burgers & Sandwiches</a></li>
+          <li><a href="#menu">Desserts & Cakes</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="color:#9db8d6;font-size:0.88rem;line-height:1.7;">Subscribe for exclusive offers and coastal cafe updates.</p>
+        <form class="newsletter-box" id="newsletterForm">
+          <input type="email" placeholder="Your email address" required>
+          <button type="submit">Join</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <div>© <span id="year"></span> Cafe Guide. All Rights Reserved.</div>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms & Conditions</a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="js/app.js"></script>
+<script src="js/integration.js"></script>
+</body>
+</html>
